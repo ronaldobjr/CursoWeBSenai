@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="shortcut icon" href="Imagens/íconelana.ico" type="image/x-icon">
+    <style>
+        body {
+          background-color: #a8c8be;
+          color: rgb(29, 23, 23);
+          font-family: Arial, sans-serif;}
+    </style>
+</head>
+<header>
+    <h1>Lana's Child</h1>
+    <img src="Imagens/lanafinscrição.PNG" alt="Lanaa" width="250" height="250">
+    <p>Venha ser um Lana Child!</p>
+</header>
+<hr>
+<main>
+    <section>
+        <h2>Cadastre-se</h2>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Nome</label>
+                <input type="text" name="nome" placeholder="digite seu nome aqui" required>
+                <label>Data de Nascimento</label>
+                <input type="date" name="data_nascimento" required>
+                <label>Telefone</label>
+                <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                <label>CPF</label>
+                <input type="tel" name="CPF" placeholder="XXX.XXX.XXX-XX" required>
+                <label>Email</label>
+                <input type="email" name="Email" id="assinale-aqui"placeholder="digite seu nome aqui" required>
+            </fieldset>
+            <fieldset>
+                <legend>Plano</legend>
+                <input type="radio" name="Plano" id="animal-sim" value="sim" checked required>
+                <label>Lana's Child I</label>
+                <input type="radio" name="Plano" id="animal-sim" value="sim" checked required>
+                <label>Lana's Child II</label>
+                <input type="radio" name="Plano" id="animal-sim"  value="sim" required>
+                <label>Lana's Child GOLD</label>
+            </fieldset>
+            <fieldset>
+                <legend>Nos fale sobre o seu amor pela Lana</legend>
+               <textarea name="sugestao" style="resize: none" required="yes" rows="7"
+                cols="50"></textarea>
+                <br>
+                <button type="submit">Envie sua sugestão</button>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <label>Endereço</label>
+                <input type="text" name="nome" placeholder="digite seu endereço" required>
+                <label>Cidade</label>
+                <input type="text" name="nome" placeholder="digite sua cidade" required>
+                <label>Estado</label>
+                <select name="carro" required>
+                    <option value="">Estado</option>
+                    <optgroup label="Estados">
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Bahia">Bahia</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Termos do usuário</legend>
+                <input type="checkbox" id="checkbox-Termos" name="Termos de usuário[]" value="termos">
+                <label for="checkbox-Termos">Aceito os termos de usuário</label>
+                <input type="checkbox" id="checkbox-notificações" name="notificar o usuário[]" value="notificações">
+                <label for="checkbox-notificações">Desejo receber notificações de Lana Child's</label>
+            <br>
+        </form>
+    </section>
+    &nbsp;
+    <button type="submit">Enviar dados</button>
+    <footer align="center">
+        <p>Copyright 2023 &copy; - Tec. Multimídias</p>
+        <p>Santa Cruz do Rio Pardo, SP</p>
+        <a href="Desafio5-clubelanadelrey.html"><button>Voltar</button></a>
+    </footer>
+</main>
+<body>
+    
+</body>
+</html>
