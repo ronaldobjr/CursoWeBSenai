@@ -1,0 +1,73 @@
+/*Estilizando cabeçalho*/
+header {
+    text-align: center;
+    
+}
+
+/*Estilizando a DIV da classe navegação*/
+.navegacao{
+    background-color: #b80d0d;
+}
+
+/*Estilizando os botões*/
+button {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    background-color: #9a9a9a;
+    padding: 5px;
+    margin: 3px;
+}
+button:hover{
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    background-color: #7a0000;
+    padding: 2px;
+}
+
+/*Estilizando o conteúdo*/
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    columns: 3;
+    text-align: center;
+}   
+
+/*Estilizando o link do título*/
+a {
+    color: black;
+}
+
+/*Estilizando o título*/
+h1 {
+    margin-top: 0;
+    margin-bottom: 10;
+    text-align: justify;
+}
+
+/*Estilizando o parágrafo*/
+p {
+    text-align: justify;
+}
+
+/*Estilizando a linha divisória*/
+hr {
+    background-color: #b80d0d;
+    height: 15px;
+    border: 0;
+}
+
+/*Estilizando o rodapé*/
+footer {
+    text-align: center;
+    margin-top: 25px;
+}
+.barranav{
+    background-color: black;
+}
+.backcolor{
+    background-color: #2c2c2c;
+}
+.corletras{
+    color: antiquewhite;
+}
