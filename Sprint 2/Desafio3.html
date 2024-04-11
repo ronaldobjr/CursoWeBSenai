@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        /*Cor do fundo da página*/
+        body{
+            background-color: antiquewhite;
+        }
+        /*Características do banner*/
+        .flyer{
+            background-color: #D18530;
+            width: 80%;
+            margin: auto;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        /*logo da página*/
+        .logo{
+            text-align: center;
+            margin: auto;
+        }
+        /*flutuando*/
+        .conteudo{
+            float: left;
+        }
+        /*estilo da borda do span*/
+        .borda{
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(0, 0, 0);
+            background-color: #947D5D;
+            padding: 10px;
+        }
+        /*borda hover do span*/
+        .borda:hover{
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(10,10,10);
+            background-color: #947D5D;
+            padding: 08px;
+        }
+        /*posição e cor do menu*/
+        .top{
+            padding: 25px;
+            text-align: center;
+            background-color: #473531;
+            height: 20px;
+        }
+        /*estilizando o h2*/
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        /*estilizando o texto*/
+        .texto{
+            padding: 10px 10px 10px 10px;
+            margin: 20px;
+            text-align: justify;
+        }
+        /*estilizando os produtos*/
+        .fotos{
+            margin: 10px;
+            padding: 3px;
+            text-align: center;
+            float: left;
+        }
+        /*estilizando a foto do criador*/
+        .imgcriador{
+            float: left;
+            padding: 20px;          
+           
+      
+        }
+        /*estilizando as fotos dos produtos*/
+        .produtos{
+            margin: 35px;
+            float: left;
+            width: 25%;
+            padding: 5px;
+        }
+        /*estilo das legendas*/
+        legend{
+            text-align: center;
+        }
+        /*limpar as características*/
+        .clear{
+            clear: both;
+        }
+        /*estilizando o box das fotos*/
+        .caixa{
+            border-top: #473531 solid 2px;
+            border-bottom: #473531 solid 2px;
+            }
+    </style>
+</head> 
+<!--corpo da página-->
+<body>
+    <!--Começando o banner-->
+    <div class="flyer">
+        <div class="logo">
+            <img src="Imagens/logo louisvuitton.PNG" alt="Logo Louis Vuitton" width="50%">        
+        </div>
+        <!--"barra de navegação"-->
+        <main class="top">
+            <span class="borda">HOME</span>
+            <span class="borda">MENU</span>
+            <span class="borda">CLOTHES</span>
+            <span class="borda">BAGS</span>
+            <span class="borda">SHOES</span>
+        </main>
+        <!--h2 estilizado-->
+        <div>
+            <h2>Conheça a Louis Vuitton</h1>
+        </div>
+        <div >
+            <!--imagem do fundador-->
+            <img class="imgcriador" src="Imagens/louis-vuittoncriador.avif" alt="criador da Louis Vuitton" width="40%">
+        </div>
+        <div class="texto">
+            <!--história da LV-->
+            <p>A história da Louis Vuitton remonta ao século XIX, quando o jovem Louis Vuitton, nascido em 1821 em Anchay, uma pequena aldeia no leste da França, mudou-se para Paris em busca de oportunidades. Em 1837, aos 16 anos, ele começou sua jornada como aprendiz de um artesão de malas e baús chamado Monsieur Maréchal. Através de sua dedicação e habilidade, Louis rapidamente se destacou e ganhou a confiança de sua clientela. <br> <br>
+
+            Em 1854, Louis Vuitton estabeleceu sua própria empresa, fundando a marca que leva seu nome até os dias de hoje. Ele introduziu inovações notáveis no design de malas e baús de viagem, como o uso de telas revestidas de lona impermeável, que eram leves e duráveis, e um sistema de fechamento inovador para proteger os pertences dos viajantes. <br> <br>
+                
+            Uma das contribuições mais importantes de Louis Vuitton para a indústria da moda foi a criação do padrão de monograma, que consiste nas iniciais "LV" entrelaçadas com flores de lis, inspirado na herança familiar de Louis como artesãos de caixas e baús. Esse padrão se tornou um símbolo de luxo e exclusividade associado à marca. <br> <br>
+                
+            Ao longo dos anos, a Louis Vuitton expandiu sua linha de produtos para incluir uma ampla gama de artigos de luxo, como bolsas, carteiras, sapatos, acessórios, roupas e até mesmo uma linha de perfumes. A marca também diversificou suas operações, abrindo lojas em todo o mundo e expandindo para novos mercados.<br> <br>
+                
+            A Louis Vuitton é reconhecida não apenas por sua qualidade excepcional e artesanato meticuloso, mas também por seu status como um ícone da moda e do luxo. A marca mantém sua reputação como uma das mais prestigiadas do mundo e continua a ser altamente desejada por consumidores em todo o mundo. Nos últimos anos, a Louis Vuitton tem continuado a inovar e se adaptar às mudanças nas tendências da moda e no comportamento do consumidor, garantindo que sua influência e relevância perdurem por muitas gerações. <br> <br>
+            Além de suas contribuições significativas para a moda e o luxo, a Louis Vuitton também é conhecida por sua abordagem inovadora em marketing e colaborações criativas. A marca foi uma das pioneiras na ideia de colaborações entre marcas de luxo e artistas, designers e celebridades, resultando em produtos exclusivos e coleções cápsula altamente desejáveis.<br> <br>
+
+            Por exemplo, a Louis Vuitton colaborou com renomados artistas contemporâneos como Stephen Sprouse, Takashi Murakami e Jeff Koons, entre outros, para criar edições limitadas de suas bolsas icônicas, adicionando uma dimensão única de arte à moda de luxo.<br> <br>
+
+            Além disso, a Louis Vuitton se mantém relevante ao abraçar a tecnologia e a inovação. A marca tem explorado novas formas de envolver os consumidores através das mídias sociais, lançando campanhas digitais criativas e experiências interativas. Também adotou a sustentabilidade como uma prioridade, buscando formas de reduzir seu impacto ambiental e promovendo práticas responsáveis em toda a cadeia de suprimentos.</p>
+        </div>
+        <div class="caixa">
+
+            <!--produto de destaque-->
+            <div class="produtos">
+                <img  src="Imagens/bolsaneverfullMM.avif" alt="bolsa neverfullMM" width="100%">
+                <legend>Neverfull MM Bag</legend>
+            </div>
+
+            <!--produto de destaque-->
+            <div  class="produtos">    
+                <img src="Imagens/sneakertimeout.avif" alt="tênis timeout" width="100%">
+                <legend>Timeout Sneaker</legend>
+            </div>    
+            
+            <!--produto de destaque-->
+            <div class="produtos">  
+                <img  src="Imagens/louisvuittonpilot.avif" alt="Óculos pilot LV" width="100%">
+                <legend>LV pilot sunglasses</legend>
+            </div>
+        
+            <!--clear para parar de flutuar-->
+            <div class="clear"></div>
+             
+        </div>
+        
+        <p>Em suma, a Louis Vuitton continua a ser uma das marcas mais influentes e admiradas do mundo da moda e do luxo, combinando tradição, artesanato excepcional, inovação e um toque de exclusividade para cativar os consumidores em todo o mundo. Sua história rica e seu compromisso com a excelência garantem que seu legado perdure por muitos anos.</p>
+
+        <!--Rodapé do site-->
+        <footer align="center">
+            <P>&copy; Louis Vouitton - France</P>
+        </footer>
+    </div>
+    
+</body>
+</html>
