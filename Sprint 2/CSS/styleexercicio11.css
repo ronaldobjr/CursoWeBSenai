@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+main{
+    margin-top: 260px;
+}
+p{
+    text-align: justify;
+    line-height: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+}
+.menu_top{
+    width: 100%;
+    height: 170px;
+    border-bottom: 3px solid burlywood;
+    border-top: 10px solid burlywood;
+    background-color: whitesmoke;
+}
+.top_esp{
+    width: 140px;
+    float: left;
+    padding: 10px 90px 10px 10px;
+}
+.top_dir{
+    float:left;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: #369871;
+    padding-left: 35px;
+    padding-top: 20px;
+}
+.menu_down{
+    background-color: bisque;
+    height: 50px;
+    text-align: center;
+}
+.menu{
+    position: relative;
+    top: 15px;
+    border-right: solid 2px brown;
+    padding: 10px;
+}
+.clear{
+    clear: both;
+}
