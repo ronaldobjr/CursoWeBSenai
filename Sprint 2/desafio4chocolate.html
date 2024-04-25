@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolateria</title>
+</head>
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Patua+One&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    main {
+        margin-top: 260px;
+    }
+
+    p {
+        font-size: xx-large;
+        text-align: center;
+        line-height: 10em;
+        padding: 20px;
+        font-family: "Patua One", serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ef5a2c;
+    }
+
+    .menu_top {
+        width: 100%;
+        height: 170px;
+        border-bottom: 3px solid #3e2b1e;
+        border-top: 30px solid #3e2b1e;
+        background-color: rgb(213, 206, 162);
+    }
+
+    .top_esp {
+        width: 140px;
+        float: left;
+        padding: 10px;
+    }
+
+    .top_dir {
+        float: left;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        color: black;
+        padding-left: 35px;
+        padding-top: 50px;
+        font-family: "Libre Baskerville", serif;
+    }
+
+    .menu_down {
+        background-color: #3e2b1e;
+        height: 50px;
+        text-align: center;
+        color: #d5cea2;
+    }
+
+    .menu {
+        position: relative;
+        top: 15px;
+        border-right: solid 2px #d5cea2;
+        padding: 10px;
+    }
+
+    .clear {
+        clear: both;
+    }
+    .menu {
+    background-color: #3e2b1e;
+    width: 100%;
+    height: 40px;
+    font-family: "Jersey 25", sans-serif;
+    text-align: center;
+}
+
+.menu ul li {
+    background-color: #3e2b1e;
+    color: bisque;
+    float: left;
+    width: 100px;
+    height: 40px;
+    display: inline;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+}
+
+.menu ul li:hover {
+    background-color: burlywood;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu ul li:hover>ul {
+    display: block;
+}
+
+.menu ul ul ul {
+    margin-left: 102px;
+    position: absolute;
+    top: 0px;
+}
+
+.menu ul ul li:hover {
+    background-color: burlywood;
+}
+
+.menu ul ul ul li:hover {
+    background-color: burlywood;
+}
+footer{
+    background-color: #d5cea2;
+}
+</style>
+
+
+
+<body>
+    <header>
+        <div class="menu_top">
+            <div class="top_esp">
+                <figure>
+                    <img src="Imagens/chocolateria.jpeg" alt="logo" height="150px">
+                </figure>
+            </div>
+            <div class="top_dir">
+                CHOCOLATERIA SÃO MATHEUS
+            </div>
+            <div class="clear"></div>
+            <div class="menu_down">
+                <nav class="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Doces
+                            <ul>
+                                <li>Verão</li>
+                                <li>Inverno</li>
+                                <li>Outono</li>
+                                <li>Primavera</li>
+                            </ul>
+                        </li>
+                        <li>Ovos</li>
+                        <li>Cacho de uva
+                            <ul>
+                                <li>Special Dog
+                                    <ul>
+                                        <li>Sênior</li>
+                                        <li>Adulto
+                                            <ul>
+                                                <li>Carne</li>
+                                                <li>Frango</li>
+                                                <li>Salmão</li>
+                                            </ul>   
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Golden
+                                    <ul>
+                                        <li>Sênior</li>
+                                        <li>Adulto</li>
+                                    </ul>
+                                </li>
+                                <li>Spert Dog
+                                    <ul>
+                                        <li>Sênior</li>
+                                        <li>Adulto</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Sobre
+                            <ul>
+                                <li>Cordinhas</li>
+                                <li>Pelúcia</li>
+                                <li>Mordedores
+                                    <ul>
+                                        <li>Borracha</li>
+                                        <li>Silicone</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="meio">
+            <p>
+                ESPECIAL PÁSCOA 2024
+            </p>
+        </div>
+
+    </main>
+    <footer>
+    <br><br><br><br><br><br><br><br><br><br>
+    </footer>
+
+</body>
+
+</html>

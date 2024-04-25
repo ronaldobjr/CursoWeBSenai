@@ -22,6 +22,7 @@ a{
 }
 a:hover{
     color: brown;
+    background-color: burlywood;
 }
 .menu_top{
     width: 100%;
@@ -52,7 +53,7 @@ a:hover{
 .menu{
     position: relative;
     top: 15px;
-    border-right: solid 2px brown;
+    border-right: solid 2px bisque;
     padding: 10px;
 }
 .clear{

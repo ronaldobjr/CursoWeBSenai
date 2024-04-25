@@ -1,0 +1,100 @@
+* {
+    margin: 0 auto ;
+    padding: 0;
+}
+.mndwn{
+    background-color: bisque;
+    width: 100%;
+    height: 40px;
+    font-family: "Jersey 25", sans-serif;
+    text-align: center;
+}
+
+.menu ul li {
+    background-color: bisque;
+    color: brown;
+    float: left;
+    width: 150px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+}
+.menu ul li:hover {
+    background-color: burlywood;
+}
+
+.menu ul {
+    padding: 0;
+    width: 800px;
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.menu ul ul ul {
+    margin-left: 102px;
+    position: absolute;
+    top: 0px;
+}
+
+.menu ul ul li:hover {
+    background-color: burlywood;
+}
+
+.menu ul ul ul li:hover {
+    background-color: burlywood;
+}
+.clear{
+    clear: both;
+}
+.top_esp{
+    width: 140px;
+    float: left;
+    padding: 10px 90px 10px 10px;
+}
+.top_dir{
+    float:left;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: #369871;
+    padding-left: 35px;
+    padding-top: 20px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+p{
+    text-align: justify;
+    line-height: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+    background-color: burlywood;
+}
+.menu_top{
+    width: 100%;
+    height: 170px;
+    border-bottom: 3px solid burlywood;
+    border-top: 10px solid burlywood;
+    background-color: whitesmoke;
+}
+.menu_down{
+    background-color: bisque;
+  
+}
