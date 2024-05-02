@@ -21,6 +21,7 @@
     line-height: 40px;
     position: relative;
 }
+
 .menu ul li:hover {
     background-color: burlywood;
 }
@@ -32,16 +33,19 @@
 
 .menu ul ul {
     display: none;
+    padding: 0;
+    width: 150px;
 }
 
 .menu ul li:hover > ul {
-    display: block;
+    display: inline;
 }
 
 .menu ul ul ul {
-    margin-left: 102px;
+    margin-left: 50px;
     position: absolute;
     top: 0px;
+    border: red solid 3px;
 }
 
 .menu ul ul li:hover {
