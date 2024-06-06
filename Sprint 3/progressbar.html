@@ -1,63 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProgressBar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Progress Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body>
+    <div style="text-align: right;">
+        <a href="paginacarol.html"><button>Next</button></a>
+    </div>
+    <br>
+    <!--container para as barras-->
     <div class="container">
+        <!--nome das barras-->
         <h2>Barra de progresso estática</h2>
+
+        <!--classe "progressão" para a barra de progresso-->
         <div class="progress">
-            <div class="progress-bar bg-success" style="width: 25%"></div>
+
+            <!--classe "barra de progressão" para a progressão ser aplicada na barra + cor vermelho em "Danger" + tamanho da barra em "width"-->
+            <div class="progress-bar bg-danger" style="width: 25%"></div>
         </div>
+
         <br>
-        <h2>Barra de progresso com variação de altura</h2>
-        <div class="progress" style="height: 30px;">
+
+        <h2>Barra de progresso com variação de altura e borda</h2>
+        <!--"Height" no estilo para ajustar o tamanho da barra e o tipo de borda-->
+        <div class="progress" style="height: 50px; border-radius: 15px;">
             <div class="progress-bar bg-success" style="width: 33%;"></div>
         </div>
+
         <br>
+
         <h2>Barra de progresso estilizada</h2>
         <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <!--classe "progress-bar-striped" para o estilo listrado estático da barra-->
+            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100" style="width: 50%"></div>
         </div>
+
         <br>
+
         <h2>Barra de progresso animada</h2>
         <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            <!--classe "progress-bar-striped" para o estilo listrado da barra + "progress-bar-animated" para animar o estilo da barra
+            + "bg-warning" para a cor vermelha-->
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
         </div>
+
         <br>
+
         <h2>Barra de progresso múltipla</h2>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-            <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+        <div class="progress"><!--Como todas estão em uma única DIV de progress, elas se encaixam-->
+            <!--barra 1 que vai até 15%-->
+            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            <!--barra 2 que vai até 30% partindo dos 15% da outra-->
+            <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            <!--barra 3 que vai até 20% partindo dos 45% das outras-->
+            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+
         <br>
+
         <h2>Barra de progresso móvel</h2>
         <div class="progress">
+            <!--ID para a linkar no JavaScript-->
             <div id="pb1" class="progress-bar bg-info" style="width: 100%;"></div>
         </div>
-        <br>
-        
-    </div>
 
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
-    <script>
-            let barra=document.getElementById("pb1");
-            let carga=0;
-            let intBarra=setInterval(()=>{
-                barra.innerHTML=carga+"%"
-                barra.style.width=carga+"%";
-                carga++;
-                if(carga>=100){
-                    carga=0;
-                }
-            },150);
+        <br>
+
+    </div>
+    <!--Referenciar o JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script> //"Script para JavaScript"
+        let barra = document.getElementById("pb1"); //Barra é um documento, identificando o ID na barra de progresso móvel
+
+        let carga = 0; //a carga/progresso da barra é iniciado em 0
+
+        let intBarra = setInterval(() => { //intervalo da barra, definir as características
+
+            barra.innerHTML = carga + "%" // escrita dentro da barra, indicando a porcentagem de progresso
+
+            barra.style.width = carga + "%"; //Definição de crescimento e tamanho da barra, em porcentagem
+
+            carga++; //barra é crescente
+
+            if (carga >= 100) { // se a barra chegar a 100%
+
+                carga = 0; // ela volta a zero
+            }
+        }, 150); //tempo de aumento da barra
     </script>
 
 </body>
+
 </html>
