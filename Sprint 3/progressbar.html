@@ -85,23 +85,23 @@
         crossorigin="anonymous"></script>
 
     <script> //"Script para JavaScript"
-        let barra = document.getElementById("pb1"); //Barra é um documento, identificando o ID na barra de progresso móvel
+        let barra=document.getElementById("pb1"); //Barra é um documento, identificando o ID na barra de progresso móvel
 
-        let carga = 0; //a carga/progresso da barra é iniciado em 0
+        let carga=0; //a carga/progresso da barra é iniciado em 0
 
-        let intBarra = setInterval(() => { //intervalo da barra, definir as características
+        let intBarra=setInterval(()=>{ //intervalo da barra, definir as características
 
-            barra.innerHTML = carga + "%" // escrita dentro da barra, indicando a porcentagem de progresso
+            barra.innerHTML=carga+"%" // escrita dentro da barra, indicando a porcentagem de progresso
 
-            barra.style.width = carga + "%"; //Definição de crescimento e tamanho da barra, em porcentagem
+            barra.style.width=carga+"%"; //Definição de crescimento e tamanho da barra, em porcentagem
 
             carga++; //barra é crescente
 
-            if (carga >= 100) { // se a barra chegar a 100%
+            if(carga >= 100){ // se a barra chegar a 100%
 
-                carga = 0; // ela volta a zero
+                carga=0; // ela volta a zero
             }
-        }, 150); //tempo de aumento da barra
+        },150); //tempo de aumento da barra
     </script>
 
 </body>
