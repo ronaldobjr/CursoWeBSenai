@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Switch</title>
+    <script>
+        var nome = prompt('Qual o nome do vendedor:');
+        var salario = parseFloat(prompt('Qual o salário dele:'));
+        var vendas = parseFloat(prompt('Qual seu total de vendas:'));
+        var comissão = null
+        var total = null
+        
+        comissão = (vendas*0,15);
+        total = (parseFloat(comissão) + salario);
+
+       document.write('O total ganho por ' + nome + ' é de: ' + total)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
