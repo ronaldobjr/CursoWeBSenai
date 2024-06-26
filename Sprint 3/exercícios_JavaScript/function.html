@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função JS</title>
+</head>
+
+<body>
+    <script>
+
+        /*function calcularArea(largura, comprimento) {
+
+        var area largura * comprimento;
+
+            return area;
+        }
+
+        var pipoca = calcularArea(prompt('Digite a largura: '), prompt('Digite a comprimento: '));
+
+        document.write('A área é de' + pipoca + 'metros quadrados');*/
+
+        function verificarImparPar(numero) {
+
+            if (numero % 2 == 0) {
+                return 'par'
+            } else {
+                return 'impar'
+            }
+        }
+
+        var numero = parseInt(prompt('qual o número escolhido '));
+        document.write('O número ' + numero + ' é ' + verificarImparPar(numero))
+
+
+    </script>
+
+</body>
+
+</html>
