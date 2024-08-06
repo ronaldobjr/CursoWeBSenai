@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo do carro</title>
+</head>
+<body>
+    <script>
+
+        var km = prompt('Digite a kilometragem rodada ');
+        var litro = prompt('Digite o consumo do seu veículo ');
+        var media = (km / litro);
+
+        var resultado = Math.ceil(media); //forçar arredondamento para cima
+        document.write('a média é de ' + resultado + 'Km/L');
+    </script>
+</body>
+</html>
